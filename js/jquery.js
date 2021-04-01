@@ -1,10 +1,16 @@
-$('.slides-list-topo').slidesListTopo({ 
-    auto:true,
-    easing:'easeInOutCubic',
-    useCSS:false,
-    speed: 1000,
-    onSlideNext: function($slideElement, oldIndex, newIndex){
-        var corSlide = $('.img-slider').eq( newIndex ).data('color');
-        $('.banner').css({ 'background-color': corSlide });
-    }
-});
+$(function () {
+
+    $('.input').data('holder', $('.input').attr('placeholder'));
+
+    $('.input').focusin(function () {
+        $(this).attr('placeholder', '');
+    });
+    $('.input').focusout(function () {
+        $(this).attr('placeholder', $(this).data('holder'));
+    });
+})
+
+function accordion() {
+    const fecharAccordion = getElementsByClassName(".accordion:target .content");
+    
+} 

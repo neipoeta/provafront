@@ -1,231 +1,278 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <section class="topo-container">
-        <div class="topo-wrap">
+        <div class="topo-content">
             <div class="arrow-down">
                 <h1>Lorem ipsum dolor</h1>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                <input for="#carousel" type="radio" src="./images/seta.png" alt="seta" >
+                <span data-testid="chevron-bottom" data-icon="chevron-bottom" title="topo-arrow">
+                    <a href="#carousel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 320 320">
+                            <path d="M48,120.97056274847714L160,232.97056274847714L272,120.97056274847714L238.05887450304573,87.02943725152286L160,165.0883117545686L81.94112549695427,87.02943725152286L48,120.97056274847714z"></path>
+                        </svg>
+                    </a>
+                    </span>
+                    
+                    
             </div>
         </div>
         <div class="slide-show-topo">
             <div class=".slides-list-topo">
-                <input type="radio" class="slide-controller-topo" name="slide-topo" checked/>
-                <input type="radio" class="slide-controller-topo" name="slide-topo"/>
-                <input type="radio" class="slide-controller-topo" name="slide-topo"/>
+                <input type="radio" class="slide-controller-topo" name="slide-topo" checked />
+                <input type="radio" class="slide-controller-topo" name="slide-topo" />
+                <input type="radio" class="slide-controller-topo" name="slide-topo" />
             </div>
         </div>
     </section>
 
-    <section id="carousel">
+    <section id="carousel" class="carousel">
         <div class="section-content">
-            <input type="radio" class="slide-controller" name="slide" checked/>
+            <input type="radio" class="slide-controller" name="slide" checked />
             <input type="radio" class="slide-controller" name="slide" />
-            <input type="radio" class="slide-controller" name="slide"/>
+            <input type="radio" class="slide-controller" name="slide" />
             <div class="slide-show">
+                
                 <ul class="slides-list">
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                     <li class="slide">
                         <img src="./images/imagem.png" alt="Lorem Ipsum">
-              
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>You are allowed to use Sentra Template for your business or client websites. You can use it for commercial or non-commercial or educational purposes.</p>
-                     
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>You are allowed to use Sentra Template for your business or client websites. You can use it
+                            for commercial or non-commercial or educational purposes.</p>
                     </li>
                 </ul>
-                
+                <span id="left" data-testid="chevron-left" data-icon="chevron-left" class="slide-controller" title="Anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+                        <path fill="currentColor"
+                            d="M19.214 21.212L12.865 15l6.35-6.35-1.933-1.932L9 15l8.282 8.282 1.932-2.07z">
+                        </path>
+                    </svg>
+                </span>
+                <span id="rigth" data-testid="chevron-right" data-icon="chevron-right" class="slide-controller" title="Avançar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+                        <path fill="currentColor"
+                            d="M11 21.212L17.35 15 11 8.65l1.932-1.932L21.215 15l-8.282 8.282L11 21.212z">
+                        </path>
+                    </svg>
+                </span>
+
             </div>
-            
+
         </div>
     </section>
 
-
     <section class="description-image">
-        <div class="border"></div>
         <div class="image"><img src="./images/imagem.png" alt="image,"></div>
         <div class="paragraph">
             <h2>Lorem ipsum dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
         </div>
-        
     </section>
-
-
-    <section class="view-image">
-        <div class="collapse-content">
-            <div class="collapse" id="image-btn1">
+    <section class="section-accordion">
+        <div class="accordion-content">
+            <div class="accordion" id="image-btn1">
                 <a class="image-btn1" href="#image-btn1">Lorem ipsum</a>
                 <div class="content">
-                    <h3>Lorem ipsum</h3>
+                    <span data-testid="chevron-bottom" data-icon="chevron-bottom" title="topo-arrow">
+                        <a href="#accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 320 320">
+                                <path d="M48,199.02943725152286L160,87.02943725152286L272,199.02943725152286L238.05887450304573,232.97056274847714L160,154.9116882454314L81.94112549695427,232.97056274847714L48,199.02943725152286z"></path>
+                            </svg>
+                        </a>
+                        </span>
+                    <h3>Lorem ipsum</h3>                
                     <div class="inner-content">
-                        
                         <img src="./images/imagem.png" alt="image,">
                         <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                                nobis iusto deleniti corporis alias quo a quam similique cupiditate
-                                pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores
-                                ut, distinctio placeat. Magni dolores perferendis ab laborum in
-                                neque, non exercitationem!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                            nobis iusto deleniti corporis alias quo a quam similique cupiditate
+                            pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores
+                            ut, distinctio placeat. Magni dolores perferendis ab laborum in
+                            neque, non exercitationem!
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="collapse" id="image-btn2">
+            <div class="accordion" id="image-btn2">
                 <a class="image-btn2" href="#image-btn2">Lorem ipsum</a>
                 <div class="content">
+                    <span data-testid="chevron-bottom" data-icon="chevron-bottom" title="topo-arrow">
+                        <a href="#accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 320 320">
+                                <path d="M48,199.02943725152286L160,87.02943725152286L272,199.02943725152286L238.05887450304573,232.97056274847714L160,154.9116882454314L81.94112549695427,232.97056274847714L48,199.02943725152286z"></path>
+                            </svg>
+                        </a>
+                        </span>
                     <h3>Lorem ipsum</h3>
                     <div class="inner-content">
-                        
                         <img src="./images/imagem.png" alt="image,">
                         <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                                nobis iusto deleniti corporis alias quo a quam similique cupiditate
-                                pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores
-                                ut, distinctio placeat. Magni dolores perferendis ab laborum in
-                                neque, non exercitationem!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                            nobis iusto deleniti corporis alias quo a quam similique cupiditate
+                            pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores
+                            ut, distinctio placeat. Magni dolores perferendis ab laborum in
+                            neque, non exercitationem!
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="collapse" id="image-btn3">
+            <div class="accordion" id="image-btn3">
                 <a class="image-btn3" href="#image-btn3">Lorem ipsum</a>
                 <div class="content">
+                    <span data-testid="chevron-bottom" data-icon="chevron-bottom" title="topo-arrow">
+                        <a href="#accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 320 320">
+                                <path d="M48,199.02943725152286L160,87.02943725152286L272,199.02943725152286L238.05887450304573,232.97056274847714L160,154.9116882454314L81.94112549695427,232.97056274847714L48,199.02943725152286z"></path>
+                            </svg>
+                        </a>
+                        </span>
                     <h3>Lorem ipsum</h3>
                     <div class="inner-content">
-                        
                         <img src="./images/imagem.png" alt="image,">
                         <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                                nobis iusto deleniti corporis alias quo a quam similique cupiditate
-                                pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores
-                                ut, distinctio placeat. Magni dolores perferendis ab laborum in
-                                neque, non exercitationem!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                            nobis iusto deleniti corporis alias quo a quam similique cupiditate
+                            pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores
+                            ut, distinctio placeat. Magni dolores perferendis ab laborum in
+                            neque, non exercitationem!
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="collapse" id="image-btn4">
+            <div class="accordion" id="image-btn4">
                 <a class="image-btn4" href="#image-btn4">Lorem ipsum</a>
                 <div class="content">
+                    <span data-testid="chevron-bottom" data-icon="chevron-bottom" title="topo-arrow">
+                        <a href="#accordion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 320 320">
+                                <path d="M48,199.02943725152286L160,87.02943725152286L272,199.02943725152286L238.05887450304573,232.97056274847714L160,154.9116882454314L81.94112549695427,232.97056274847714L48,199.02943725152286z"></path>
+                            </svg>
+                        </a>
+                        </span>
                     <h3>Lorem ipsum</h3>
                     <div class="inner-content">
-                        
                         <img src="./images/imagem.png" alt="image,">
                         <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                                nobis iusto deleniti corporis alias quo a quam similique cupiditate
-                                pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores
-                                ut, distinctio placeat. Magni dolores perferendis ab laborum in
-                                neque, non exercitationem!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                            nobis iusto deleniti corporis alias quo a quam similique cupiditate
+                            pariatur aliquid, omnis, officia dicta officiis impedit nisi dolores
+                            ut, distinctio placeat. Magni dolores perferendis ab laborum in
+                            neque, non exercitationem!
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="section-form">
-		<div class="wrap">
-			<form class="contato-form validate-form">
-				<div class="wrap-input validate-input" data-validate="Name is required">
-					<input class="input" type="text" name="name" placeholder="Nome: ">
-				</div>
-
-				<div class="wrap-input-email validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input" type="text" name="email" placeholder="E-mail: ">
-				</div>
-
-				<div class="wrap-input-tel validate-input">
-					<input class="input" type="text" name="web" placeholder="Telefone: ">
-				</div>
-
-				<div class="wrap-input validate-input" data-validate = "Message is required">
-					<textarea class="input" name="message" placeholder="Mensagem: "></textarea>
-				</div>
-
-				<div class="section-form-btn">
-					<div class="wrap-form-btn">
-						<div class="contato-form-bgbtn"></div>
-						<button class="contato-form-btn">
-							Submit
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-    
-
+    <section class="section-form">
+        <div class="wrap">
+            <form class="contato-form validate-form">
+                <div class="wrap-input validate-input" data-validate="Name is required">
+                    <input class="input" type="text" name="name" placeholder="*Nome:">
+                    <label for="nomeCompleto" class="label-form">Informe seu nome </label>
+                </div>
+                <div class="wrap-input-email validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="input" type="text" name="email" placeholder="*E-mail:">
+                    <label for="email" class="label-form">Informe seu e-mail </label>
+                </div>
+                <div class="wrap-input-tel validate-input">
+                    <input class="input" type="text" name="web" placeholder="*Telefone:"data-validate="Valid telefone is required: ()9999-9999">
+                    <label for="telefone" class="label-form"> (__)_____-____ </label>
+                </div>
+                <div class="wrap-input validate-input" data-validate="Message is required">
+                    <textarea class="input" name="message" placeholder="*Mensagem: "></textarea>
+                    <label for="telefone" class="label-form"> Escreva aqui </label>
+                </div>
+                <div class="section-form-btn">
+                    <div class="wrap-form-btn">
+                        <div class="contato-form-bgbtn"></div>
+                        <button class="contato-form-btn">
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
     <footer class="footer">
-        <div class="footer-text"> 
+        <div class="footer-text">
             <h2>Lorem Ips</h2>
         </div>
     </footer>
 </body>
+
 </html>
