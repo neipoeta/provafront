@@ -12,5 +12,5 @@ $(function () {
 
 function accordion() {
     const fecharAccordion = getElementsByClassName(".accordion:target .content");
-    
-} 
+
+}

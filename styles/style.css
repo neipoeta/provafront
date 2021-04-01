@@ -92,10 +92,10 @@ input:focus {
 .slide-controller:nth-child(1):checked ~ .slide-show .slides-list {
   --selected-item: 0;
 }
-.slide-controller:nth-child(3):checked ~ .slide-show .slides-list {
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list {
   --selected-item: 1;
 }
-.slide-controller:nth-child(6):checked ~ .slide-show .slides-list {
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list {
   --selected-item: 2;
 }
 
@@ -110,9 +110,8 @@ input:focus {
   list-style-type: none;
   position: relative;
   left: calc(var(--selected-item) * -100%);
-  width: calc(var(--selected-total) * 33%);
+  width: calc(var(--selected-total) * 34%);
   transition: left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
   display: grid;
   grid-auto-flow: column;
 }
@@ -139,13 +138,19 @@ input:focus {
   justify-items: center;
   font-size: 14px;
   padding-top: 1rem;
+  padding-left: 3rem;
 }
 
-.slide p {
+li.slide p {
   align-items: center;
   justify-items: flex-start;
   font-size: 12px;
-  padding: 1rem 2rem;
+  padding: 1rem 0 3rem 2rem;
+}
+
+li.slide {
+  max-width: 17rem;
+  padding-left: 3rem;
 }
 
 /* ------------------------------------------------ Section 3 ------------------------------------------------*/
@@ -251,7 +256,6 @@ input:focus {
   position: absolute;
   right: 0;
   margin-right: 1.5rem;
-
 }
 
 .inner-content {
@@ -284,7 +288,6 @@ input:focus {
 .accordion:target a.content::before {
   transform: rotate(-10deg);
   max-height: 0;
-  
 }
 
 /* ------------------------------------------------ Section 5 ------------------------------------------------*/
@@ -341,24 +344,6 @@ input:focus {
   margin-left: 1vw;
 }
 
-.label-form {
-  margin: 4.5vh 0 0 9vw;
-  position: absolute;
-  color: rgb(255, 255, 255);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: 0.5s;
-  font-size: 15px;
-}
-
-label > .label-form:focus {
-  margin: 0;
-  width: 0;
-  font-size: 0;
-}
-
 input.input {
   height: 50px;
   background: #bfbfbf;
@@ -383,7 +368,7 @@ textarea.input {
   border-radius: 15px;
 }
 
-.input:focus {
+.input:focus-within {
   background: #ffffff;
 }
 
@@ -543,7 +528,7 @@ footer h2 {
     text-align: -webkit-center;
   }
 
-.input {
+  .input {
     padding: 0 20px;
     margin-top: 10px;
   }
